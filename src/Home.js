@@ -20,7 +20,7 @@ function Home() {
             rating={5}
             image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._SX325_BO1,204,203,200_.jpg"
           />
-          {/* <Product
+          <Product
             id="49538094"
             title="Kenwood kMix Stand Mixer for Baking, Stylish Kitchen Mixer with K-beater, Dough Hook and Whisk, 5 Litre Glass Bowl"
             price={239000}
@@ -28,7 +28,7 @@ function Home() {
             image="https://images-na.ssl-images-amazon.com/images/I/81O%2BGNdkzKL._AC_SX450_.jpg"
           />
         </div>
-
+        {/*
         <div className="home__row">
           <Product
             id="4903850"
@@ -60,8 +60,8 @@ function Home() {
             price={10949800}
             rating={4}
             image="https://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg"
-          /> */}
         </div>
+          /> */}
       </div>
     </div>
   );
