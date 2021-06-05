@@ -28,7 +28,7 @@ function Home() {
             image="https://images-na.ssl-images-amazon.com/images/I/81O%2BGNdkzKL._AC_SX450_.jpg"
           />
         </div>
-        {/*
+
         <div className="home__row">
           <Product
             id="4903850"
@@ -57,11 +57,37 @@ function Home() {
           <Product
             id="90829332"
             title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor - Super Ultra Wide Dual WQHD 5120 x 1440"
-            price={10949800}
+            price={
+              10000000
+              //   function convertToRupiah(number) {
+              //   if (number) {
+              //     const rupiah = "";
+
+              //     const numberrev = number
+              //       .toString()
+              //       .split("")
+              //       .reverse()
+              //       .join("");
+
+              //     for (const i = 0; i < numberrev.length; i++)
+              //       if (i % 3 == 0) rupiah += numberrev.substr(i, 3) + ".";
+
+              //     return (
+              //       "Rp. " +
+              //       rupiah
+              //         .split("", rupiah.length - 1)
+              //         .reverse()
+              //         .join("")
+              //     );
+              //   } else {
+              //     return number;
+              //   }
+              // }
+            }
             rating={4}
             image="https://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg"
+          />
         </div>
-          /> */}
       </div>
     </div>
   );
