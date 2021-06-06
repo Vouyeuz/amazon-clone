@@ -23,6 +23,8 @@ function Subtotal() {
         thousandSeparator={true}
         prefix={"Rp"}
       />
+
+      <button>Proceed to Checkout</button>
     </div>
   );
 }
