@@ -7,6 +7,7 @@ import Checkout from "./Checkout";
 import Login from "./Login";
 import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
+import Navbar from "./Navbar";
 
 function App() {
   const [{}, dispatch] = useStateValue();
@@ -39,6 +40,9 @@ function App() {
     <Router>
       <div className="app">
         <Switch>
+          <Route path="/navbar">
+            <Navbar />
+          </Route>
           <Route path="/login">
             <Login />
           </Route>
