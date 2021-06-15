@@ -7,7 +7,8 @@ import Checkout from "./Checkout";
 import Login from "./Login";
 import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
-import Navbar from "./Navbar";
+import MyNavbar from "./MyNavbar";
+import MyHome from "./MyHome";
 
 function App() {
   const [{}, dispatch] = useStateValue();
@@ -41,7 +42,8 @@ function App() {
       <div className="app">
         <Switch>
           <Route path="/navbar">
-            <Navbar />
+            <MyNavbar />
+            <MyHome />
           </Route>
           <Route path="/login">
             <Login />

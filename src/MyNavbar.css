@@ -1,0 +1,19 @@
+.navbar__logo {
+  width: 60px;
+  object-fit: contain;
+  margin: 20px;
+  margin-top: -5px;
+  margin-bottom: -10px;
+}
+
+.navbar__toggler {
+  align-items: center;
+  display: flex;
+  height: 30px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+.navbar__collapse {
+  padding-left: 20px;
+}
