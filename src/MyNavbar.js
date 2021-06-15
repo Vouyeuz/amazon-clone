@@ -38,17 +38,21 @@ const MyNavbar = (props) => {
           />
         </NavbarBrand>
 
-        <NavLink className="navbar__option" href="/checkout">
-          <Button color="secondary" outline>
-            <ShoppingBasketIcon />
-            <Badge className="navbar__basketCount" color="danger">{basket?.length}</Badge>
-          </Button>
-        </NavLink>
-
         <NavbarToggler className="navbar__toggler" onClick={toggle} />
 
         <Collapse className="navbar__collapse" isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
+            <NavItem>
+              <NavLink className="navbar__option" href="/checkout">
+                <Button color="secondary" outline>
+                  <ShoppingBasketIcon />
+                  <Badge className="navbar__basketCount" color="danger">
+                    {basket?.length}
+                  </Badge>
+                </Button>
+              </NavLink>
+            </NavItem>
+
             <NavItem>
               <NavLink href="/components/">Components</NavLink>
             </NavItem>
