@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import {
+  Badge,
+  Button,
   Container,
   Collapse,
   Navbar,
@@ -15,11 +17,15 @@ import {
   NavbarText,
 } from "reactstrap";
 import "./MyNavbar.css";
+import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
+import { useStateValue } from "./StateProvider";
 
 const MyNavbar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
+
+  const [{ basket, user }, dispatch] = useStateValue();
 
   return (
     <Container className="themed-container" fluid={true}>
@@ -31,6 +37,13 @@ const MyNavbar = (props) => {
             alt=""
           />
         </NavbarBrand>
+
+        <NavLink className="navbar__option" href="/checkout">
+          <Button color="secondary" outline>
+            <ShoppingBasketIcon />
+            <Badge className="navbar__basketCount" color="danger">{basket?.length}</Badge>
+          </Button>
+        </NavLink>
 
         <NavbarToggler className="navbar__toggler" onClick={toggle} />
 
